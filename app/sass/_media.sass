@@ -1,0 +1,121 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.block-gallery
+		grid-template-columns: repeat(4, 1fr)
+	
+	.block
+		margin: 15px 15px
+		padding: 0
+
+	.notification
+		padding: 10px
+		margin-bottom: 5px
+
+	section
+		padding: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.block-gallery
+		grid-template-columns: repeat(3, 1fr)
+	
+	body
+		font-size: 12px
+
+	.block-header
+		padding-bottom: 10px
+
+	.block-content
+		margin:
+			top: 5px
+			bottom: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+	
+	body
+		padding: 10px
+		font-size: 12px
+
+	.block-gallery
+		grid-template-columns: repeat(2, 1fr)
+	
+	.vbox-content
+		padding: 0
+
+	.vbox-content
+		padding: 0
+		.figlio
+			width: 95% !important
+
+	.block-header
+		.title
+			span
+				mark
+					font-size: 12px
+
+	.block-content
+		flex-direction: column 
+		.right-content
+			text-align: left
+			padding-top: 10px
+
+
+@media only screen and (max-width : 480px)
+	.block-gallery
+		grid-template-columns: repeat(1, 1fr)
+
+	.block-header
+		display: flex
+		flex-direction: column
+		.date
+			padding-top: 10px
+
+	.vbox-next
+		span
+			display: none
+
+	.vbox-prev
+		span
+			display: none
+	
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -1,0 +1,146 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background-color: #F7F7F7
+	padding: 30px
+	color: #3A3742
+	margin: 0
+
+.vbox-container
+	overflow: hidden
+
+section
+	max-width: 1024px
+	display: flex
+	margin: auto
+	background-color: #fff
+	display: flex
+	flex-direction: column
+	padding: 15px 0
+	border-radius: 5px
+	box-shadow: 0 0 20px rgba(0,0,0, 0.1)
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.block
+	display: flex
+	flex-direction: column
+	margin: 20px 40px
+	padding: 20px
+	background-color: #F7F7F7
+	border-radius: 4px
+
+.notification
+	background-color: #FFED00
+	padding: 10px
+	margin-bottom: 5px
+	position: relative
+	display: flex
+	flex-direction: row
+	font-weight: bold
+	&::before
+		content: '\f071'
+		font-family: fontawesome
+		margin:
+			right: 10px
+			left: 5px
+		text-decoration: none
+		font-size: 18px
+	span
+		padding-top: 2.2px
+
+	
+.notification::after
+	content: ''
+	position: absolute 
+	top: 48px
+	left: 0
+	border: 20px solid transparent
+	border-top: 20px solid #FFED00
+
+.block-header
+	display: flex
+	justify-content: space-between
+	margin: 10px 20px
+	padding-bottom: 25px
+	border-bottom: 2px solid #E3E5E5
+	.title
+		span
+			font-weight: bold
+			text-decoration: underline 
+			mark				
+				background: none
+				color: #00D4D4
+	.date 
+		span
+			font-weight: bold
+			
+
+.block-content
+	display: flex
+	margin: 10px 20px
+	justify-content: space-between
+	line-height: 1.4
+	span
+
+	.right-content
+		text-align: right
+
+.block-gallery
+	display: grid;
+	grid-template-columns: repeat(5, 1fr)
+	grid-gap: 3px
+	background-color: #fff
+	margin: 15px
+	padding: 15px 3px
+	img
+		max-width: 100%
+		min-height: 160px
+		
+
+@import "media"
